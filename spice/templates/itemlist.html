@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{ super() }}{% endblock %}
+{% block head %}{{ super() }}
+	<link rel="stylesheet" type="text/css" href="{{url_for("static",filename="items.css")}}" />
+{% endblock %}
+{% block content %}
+	<div class="wrap">
+	{% for product in products %}
+		<div class="item">
+			<table align="center">
+				<tr><td align="center" height = 120px width = 120px><img src="{{url_for("thumb", image = product.image.thumb_uri)}}"></td></tr>
+				<tr><td align="center"><h3>{{product.name}}</h3></td></tr>
+				<tr><td align="center"><h3>Price: {{product.price}}</h3></td></tr>
+			</table>
+		</div>
+	{% endfor %}
+	</div>
+{% endblock %}

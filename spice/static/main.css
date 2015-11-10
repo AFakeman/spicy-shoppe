@@ -1,0 +1,144 @@
+header {
+	background:#9947FE;
+	width:100%;
+	padding: 0;
+	text-align: center;
+}
+
+div.logo-main{
+	display: inline-block;
+	padding: 0px;
+}
+
+div.logo-alt{
+	display: inline-block;
+	padding-left: 10px;
+	float:left;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	border: 0;
+	background: #7E8FFC;
+	height: 100%;
+}
+
+div.sidebar {
+	display:table-cell;
+	margin: 0;
+	min-height: 400px;
+	max-height: 100%;
+	background: #BCB4FC;
+	width: 125px;
+	position:relative;
+	overflow-x:hidden;
+	white-space: nowrap;
+	padding:7px;
+}
+
+img.pills {
+	display:block;
+	position:absolute;
+	top:0;
+	width: 100%
+}
+
+div.main-content {
+	display:table-cell;
+	height:100%; /* take as much as possible */
+	width: 100%;
+	margin:0;
+	padding: 5px;
+}
+
+small-header {
+	font: bold italic 19px serif;
+	font-family: Helvetica;
+	text-shadow:
+    -0.3px -0.3px 0 #FFF,
+    0.3px -0.3px 0 #FFF,
+    -0.3px 0.3px 0 #FFF,
+    0.3px 0.3px 0 #FFF;
+    line-height: 150%;
+}
+a.item-font {
+	margin: 8px;
+	font: bold italic 14px serif;
+	font-family: Helvetica;
+	text-shadow:
+    -0.3px -0.3px 0 #FFF,
+    0.3px -0.3px 0 #FFF,
+    -0.3px 0.3px 0 #FFF,
+    0.3px 0.3px 0 #FFF;
+}
+
+div.page-wrapper {
+	display:table;
+	table-layout: fixed;
+	min-height: 425px;
+	margin:0;
+	width:100%;
+}
+
+desc {
+	font-family: Helvetica;
+	font: 13px sans-serif;
+	color: yellow;
+}
+
+img.centered {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+div.feedback {
+	margin-left: 20px;
+	margin-right: 20px;
+	/* margin-top: -10px; */
+	background: #FFFFFF;
+	min-width: 350px;
+	min-height: 150px;
+	margin-bottom: 20px;
+	font-family: Helvetica;
+}
+div.feedback_comment {
+	display:table-cell;
+	margin: 10px;
+	vertical-align: middle;
+}
+div.feedback_avatar {
+	display:table-cell;
+	/* width: 20px; */
+	/* margin: 20px; */
+	vertical-align: middle;
+}
+
+img.avatar {
+	width: 50px;
+}
+
+div.feedback_container {
+	display: block;
+	text-align: left;
+	border-collapse: separate;
+	margin-left: auto;
+	margin-right:auto;
+	padding: 5px;
+	border-spacing: 10px 3px;
+	width: 90%;
+	border: 1px solid #000;
+	/* vertical-align: middle; */
+	margin-top: 10px;
+}
+
+.feedback_container {}
+
+p.feedback-title {
+	margin-top: -15px;
+	margin-left: 20px;
+	font-family: Helvetica;
+	color: white;
+}

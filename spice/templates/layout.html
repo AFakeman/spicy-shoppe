@@ -1,0 +1,30 @@
+<html>
+	<head>
+		{% block head %}
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{url_for("static",filename="main.css")}}" />
+		<title>{% block title %}Spicy Shoppe{% endblock %}</title>
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<div class = "logo-main">
+				<a href = "/" ><img src="{{url_for("static",filename="logo_forest.jpg")}}"> </a>
+			</div>
+		</header>
+		<div class = "page-wrapper">
+			<div class = "sidebar">
+				{% for super_cat in cats %}
+				<small-header> {{super_cat.name}} ></small-header> <br>
+				{% for cat in super_cat.subcats %}
+				<a class="item-font" href="/category/{{cat[1]}}"> - {{cat[0]}}</a> <br>
+				{% endfor %}
+				{% endfor %}
+			</div>
+			<div class = "main-content">
+			{% block content %}
+			{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+Database scheme:
+1) id
+2) thumbnail
+3) picture
+4) description
+5) name
+6) category

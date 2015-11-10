@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}{{ super() }}{% endblock %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+				<desc>Привет. Я начинающий программист. И это мой интернет магазин. <br>
+				Здесь вы можете купить: оружие, наркотики, заказать эскорт-услуги.</desc>
+				<img class="centered" src="{{url_for("static",filename="guns.png")}}">
+				<p class = "feedback-title">Книга отзывов:</p>
+				<div class = "feedback">
+				{% for comment in feedback %}
+					<div class = "feedback_container">
+						<div class = "feedback_avatar">
+							<img class = "avatar" src = "{{url_for("avatar",filename="{{comment.img}}")}}">
+						</div>
+						<div class = "feedback_comment">{{comment.text}}</div>
+					</div>
+				{% endfor %}
+				</div>
+{% endblock %}

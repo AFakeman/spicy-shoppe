@@ -1,0 +1,38 @@
+.wrap{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+.item{
+    vertical-align:top;
+    display:inline-block;
+    border-radius: 10px;
+    width:200px;
+    height:200px;
+    margin:10px;
+    position:relative;
+    overflow-y:hidden;
+}
+h1{
+	font-size:large;
+    font-family: Helvetica;
+    line-height: 100%;
+    margin-top: 0px; 
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+h2{
+    line-height: 100%;
+    font-family: Helvetica;
+    color:#FDDE09;
+    margin-top:0px;
+    margin-bottom: 5px;
+}
+h3{
+    line-height: 100%;
+    font-family: Helvetica;
+    color:#FDDE09;
+    margin-top:0px;
+    margin-bottom: 3px;
+    font-size:16px
+}
