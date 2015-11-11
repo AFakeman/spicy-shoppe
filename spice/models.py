@@ -48,3 +48,7 @@ class Feedback(db.Model):
 	text = db.Column(db.String(140))
 	avatar = db.relationship('Picture', backref=db.backref('Feedback', lazy='dynamic'), uselist = False)
 	avatar_id = db.Column(db.Integer, db.ForeignKey('picture.id'))
+	
+	def __init__(self, text, avatar):
+		self.text = text
+		self.avatar = avatar

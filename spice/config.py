@@ -1,3 +1,5 @@
 PICS_DIR = "static/pics"
-THUMBS_DIR = "static/thumbs"
+THUMBS_DIR = "static/pics/thumbs"
+AVATAR_DIR = "static/avatars"
+AVATAR_THUMBS_DIR = "static/avatars/thumbs"
 SQLALCHEMY_DATABASE_URI = "sqlite:///test.db"

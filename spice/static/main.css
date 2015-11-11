@@ -126,12 +126,13 @@ div.feedback_container {
 	border-collapse: separate;
 	margin-left: auto;
 	margin-right:auto;
-	padding: 5px;
-	border-spacing: 10px 3px;
+	padding: 2px;
+	min-height: 20px;
+	border-spacing: 3px 3px;
 	width: 90%;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	/* vertical-align: middle; */
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 .feedback_container {}

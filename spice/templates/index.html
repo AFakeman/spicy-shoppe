@@ -7,13 +7,13 @@
 				<img class="centered" src="{{url_for("static",filename="guns.png")}}">
 				<p class = "feedback-title">Книга отзывов:</p>
 				<div class = "feedback">
-				{% for comment in feedback %}
-					<div class = "feedback_container">
-						<div class = "feedback_avatar">
-							<img class = "avatar" src = "{{url_for("avatar",filename="{{comment.img}}")}}">
+					{% for comment in feedback %}
+						<div class = "feedback_container">
+							<div class = "feedback_avatar">
+								<img class = "avatar" src = "{{ url_for("avatar_thumb",image=comment[1]) }}">
+							</div>
+							<div class = "feedback_comment">{{comment[0]}}</div>
 						</div>
-						<div class = "feedback_comment">{{comment.text}}</div>
-					</div>
-				{% endfor %}
+					{% endfor %}
 				</div>
 {% endblock %}

@@ -5,9 +5,8 @@ import string
 import os
 import imghdr
 
-def thumb(image):
+def thumb(image, size):
 	output = io.BytesIO()
-	size = (120,120)
 	img = Image.open(image)
 	img.thumbnail(size)
 	img.save(output,format="png")

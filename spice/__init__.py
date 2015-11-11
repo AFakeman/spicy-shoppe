@@ -5,6 +5,8 @@ from flask.ext.migrate import Migrate, MigrateCommand
 import os
 
 application = Flask(__name__)
+application.debug = True
+application.use_reloader = False
 db = SQLAlchemy(application)
 migrate = Migrate(application, db)
 manager = Manager(application)
@@ -26,5 +28,15 @@ for dir in os.path.split(application.config["PICS_DIR"]):
 		os.mkdir(dir)
 	os.chdir(dir)
 os.chdir(application.config['APPLICATION_ROOT'])
-#import spice.db_fill
 
+for dir in os.path.split(application.config["AVATAR_THUMBS_DIR"]):
+	if not os.path.isdir(dir):
+		os.mkdir(dir)
+	os.chdir(dir)
+os.chdir(application.config['APPLICATION_ROOT'])
+
+for dir in os.path.split(application.config["AVATAR_DIR"]):
+	if not os.path.isdir(dir):
+		os.mkdir(dir)
+	os.chdir(dir)
+os.chdir(application.config['APPLICATION_ROOT'])
