@@ -14,7 +14,6 @@ def add_category(name, super_name):
 	if not(models.Category.query.filter_by(name = name).first()):
 		cat = models.Category(name, super_cat)
 		db.session.add(cat)
-		db.session.commit()
 	print(models.Supercategory.query.first())
 
 def add_product(name, cat, price, pic):
@@ -23,7 +22,6 @@ def add_product(name, cat, price, pic):
 	picture = models.Picture(pic_uris[0], pic_uris[1])
 	product = models.Product(name, category, price, picture)
 	db.session.add(product)
-	db.session.commit()
 
 def upload_pic(pic, pic_dir, thumb_dir, thumb_size):
 	buf = io.BytesIO()
@@ -65,7 +63,6 @@ def add_feedback(text, image):
 	picture = models.Picture(pic_uris[0], pic_uris[1])
 	comment = models.Feedback(text, picture)
 	db.session.add(comment)
-	db.session.commit()
 
 def get_goods(cat_id):
 	prods = models.Product.query.filter_by(category_id = cat_id).all()
@@ -83,3 +80,5 @@ def get_feedback():
 def reset():
 	db.create_all()
 
+def commit():
+	db.session.commit()
