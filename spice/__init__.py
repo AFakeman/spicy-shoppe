@@ -1,16 +1,13 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.script import Manager
-from flask.ext.migrate import Migrate, MigrateCommand
 import os
 
 application = Flask(__name__)
-application.debug = True
+application.debug = False
 application.use_reloader = False
 db = SQLAlchemy(application)
-migrate = Migrate(application, db)
 manager = Manager(application)
-manager.add_command('db', MigrateCommand)
 application.config.from_pyfile('config.py')
 application.config['APPLICATION_ROOT'] = os.path.dirname(__file__)
 
