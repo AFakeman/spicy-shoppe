@@ -11,6 +11,8 @@ Installation:
 3) `run.py runserver`. Flask will output the url to be opened in browser.  
 
 File structure:  
+`run.py` - a script to run the application using built-in server.
+`db_fill.py` - a script to fill database with random data from Reddit.
 `spice` - main app directory, treated similar to a module.  
 `spice/config.py` - app config, self-explanatory.  
 `spice/database.py` - interface for adding and removing data from database, including adding pictures.  
