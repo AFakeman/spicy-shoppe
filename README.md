@@ -2,8 +2,8 @@ Requirements:
 1) Python 3.4  
 2) Flask (tested with 0.10.1)  
 3) Flask-Script (tested with 2.0.5)
-4) Flask-SQLAlchemy (tested with 2.0)
-5) praw (tested with 3.2.1)
+4) Flask-SQLAlchemy (tested with 2.0)  
+5) praw (tested with 3.2.1)  
 
 Installation:  
 1) Install all the dependencies  
