@@ -74,7 +74,6 @@ def get_feedback():
 	result = []
 	for comment in fb:
 		result.append((comment.text, comment.avatar.thumb_uri))
-	print(fb[0].avatar)
 	return result
 
 def reset():
