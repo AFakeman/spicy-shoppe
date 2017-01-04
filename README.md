@@ -4,7 +4,7 @@ Requirements:
 3) Flask-Script  
 4) Flask-SQLAlchemy  
 5) praw  
-6) PIL
+6) pillow
 
 Installation:  
 1) Install all the dependencies  
