@@ -21,7 +21,9 @@ def add_categories(defaults):
 
 def update_goods_from_Reddit(Cats):
     add_categories(Cats)
-    red = praw.Reddit(client_id = 'rwK_HKJFy9T2qQ', client_secret = 'XIoCIGBaXmwEOJLIBp6KNeeNLUk', user_agent = 'keks')
+    cl_id = os.environ['SPICY_REDDIT_ID']
+    cl_sec = os.environ['SPICY_REDDIT_SECRET']
+    red = praw.Reddit(client_id = cl_id, client_secret = cl_sec, user_agent = 'keks')
     for cat in Cats:
         for sub in red.subreddit(cat[2]).hot(limit=20):
             img_url = sub.url

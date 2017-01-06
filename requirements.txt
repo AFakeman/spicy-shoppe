@@ -1,4 +1,5 @@
 Flask
 Pillow
 Flask-SQLAlchemy
+Flask-Script
 PRAW
