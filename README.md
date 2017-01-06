@@ -1,10 +1,5 @@
-Requirements:  
-1) Python 3.4  
-2) Flask  
-3) Flask-Script  
-4) Flask-SQLAlchemy  
-5) praw  
-6) pillow
+Please refer to requirements.txt  
+
 
 Installation:  
 1) Install all the dependencies  
